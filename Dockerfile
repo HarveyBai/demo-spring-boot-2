@@ -4,7 +4,7 @@ MAINTAINER HarveyBai <320312396@qq.com>
 RUN pwd
 RUN ls -al
 WORKDIR /app
-COPY src /app/
+COPY src /app/src/
 COPY pom.xml /app/.
 RUN pwd
 RUN ls -al
