@@ -1,8 +1,12 @@
 FROM maven:3.9-amazoncorretto-8 as builder
 MAINTAINER HarveyBai <320312396@qq.com>
 
+RUN pwd
+RUN ls -al
 COPY src .
 COPY pom.xml .
+RUN pwd
+RUN ls -al
 
 # 编译打包（jar包生成路径：/app/target）
 RUN mvn package -Dmaven.test.skip=true
