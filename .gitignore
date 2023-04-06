@@ -1,11 +1,41 @@
+#dir
+target
+overlays
+logs
+
+# .开头的任何文件
+.*
+# 包含隐私数据的配置文件
+.private.properties
+# 排除 .gitignore 本身
+!/.gitignore
+!/.travis.yml
+
+
 # Compiled class file
 *.class
 
 # Log file
 *.log
+*.versionsBackup
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
 
 # BlueJ files
 *.ctxt
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
